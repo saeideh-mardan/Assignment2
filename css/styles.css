@@ -1,0 +1,655 @@
+
+.wrapper{
+    margin: 0 auto;
+    width: 70%;
+}
+ .logo{
+    background-image: url('../img/apple.png');
+    height: 40px;
+    width: 40px;
+    background-size: 40px;
+    float: left;
+    margin-left: 15px;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+h1, h2, h3 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+p{
+  text-align: center;
+  color: white;
+}
+
+.container-fluid.main{
+  position: relative; /* To make the navbar positions relative to this container */
+  padding: 0;
+}
+
+
+.navbar-default {
+  background-image: none;
+  background-color: transparent; /* Make the menu become transparent */
+  border-radius: 0px;
+  border: 0;
+  box-shadow: none;
+  padding: 10px;
+  position: absolute; /* Make the menu out of the document flow so it can placed anywhere without disturbing other widgets */
+  display: inline-block;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10; /* If you delete this line, your menu link won't be clicked because it is behind the background. Applying this code bring the menu in front of the background */
+}
+
+
+.navbar-default .navbar-brand {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+ .navbar-nav{
+   padding-left: 50px;
+ }
+
+.navbar-default .navbar-nav > li > a {
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 20px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ff9800;
+  background-color: transparent;
+}
+
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+
+}
+
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: black;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: black;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Search
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+    a:hover {
+    	color: #F60;
+    }
+
+    input[type=search] {
+    	-webkit-appearance: textfield;
+    	-webkit-box-sizing: content-box;
+    	font-family: inherit;
+    	font-size: 100%;
+    }
+    input::-webkit-search-decoration,
+    input::-webkit-search-cancel-button {
+    	display: none;
+    }
+
+    .search form{
+          position: absolute;
+          right: 0px;
+          top: 20px;
+      }
+
+    input[type=search] {
+    	background: white url('https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png') no-repeat 9px center;
+        opacity: 0.7;
+        border: none;
+    	padding: 9px 10px 9px 32px;
+    	width: 55px;
+      height: 15px;
+    	-webkit-border-radius: 10em;
+    	-moz-border-radius: 10em;
+    	border-radius: 6px;
+
+    	-webkit-transition: all .5s;
+    	-moz-transition: all .5s;
+    	transition: all .5s;
+    }
+
+
+    input[type=search]:focus {
+    	width: 130px;
+    	background-color: #fff;
+    	border-color: #66CC75;
+      outline: none;
+    	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    	box-shadow: 0 0 5px rgba(109,207,246,.5);
+    }
+
+
+    input:-moz-placeholder {
+    	color: #999;
+    }
+    input::-webkit-input-placeholder {
+    	color: #999;
+    }
+
+    /* Demo 2 */
+    #searchbar-m input[type=search] {
+    	width: 15px;
+    	padding-left: 10px;
+    	color: transparent;
+    	cursor: pointer;
+    }
+    #searchbar-m input[type=search]:hover {
+    	background-color: #fff;
+    }
+    #searchbar-m input[type=search]:focus {
+    	width: 130px;
+    	padding-left: 32px;
+    	color: #000;
+    	background-color: #fff;
+    	cursor: auto;
+    }
+    #searchbar-m input:-moz-placeholder {
+    	color: transparent;
+    }
+    #searchbar-m input::-webkit-input-placeholder {
+    	color: transparent;
+    }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Carousel
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+.carousel .background {
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+
+
+@media (max-width:992px) {
+  .carousel .background {
+    background-size: cover; /* To make the background image look good */
+
+  }
+.search form{
+      position: absolute;
+      right: 70px;
+  }
+
+.wrapper{
+  width: 100%;
+}
+}
+
+.carousel .background.a {
+  background-image: linear-gradient( transparent, #ffffff), url("../img/holding-apple.jfif");
+  background-size: cover;
+}
+
+.carousel .background.b {
+  background-image: linear-gradient( transparent, #ffffff), url("../img/heartbowl.jfif");
+  background-size: cover;
+}
+
+.carousel .background.c {
+  background-image: linear-gradient( transparent, #ffffff), url("../img/tableoffood.jpg");
+  background-size: cover;
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition: opacity 0.5s; /* The 0.5s describes the duration to make the opacity from 0 to 1 */
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+
+
+/* CSS Hack to trigger GPU for smooth transition */
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+  .carousel-fade .carousel-inner > .item.next,
+  .carousel-fade .carousel-inner > .item.active.right {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.prev,
+  .carousel-fade .carousel-inner > .item.active.left {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.next.left,
+  .carousel-fade .carousel-inner > .item.prev.right,
+  .carousel-fade .carousel-inner > .item.active {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+}
+/* CSS Hack to trigger GPU for smooth transition */
+
+/*
+Cover Text
+ */
+
+.covertext {
+  position: absolute; /* To make the div to be place anywhere. It is out of the document flow */
+  top: 250px; /* The distance between the div with the top of document */
+  left: 0px; /* Make the div full width */
+  right: 0px; /* Make the div full width */
+}
+
+.title {
+
+  font-weight: 600;
+  font-size: 60px;
+  color: #0a2735;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 23px;
+  color: #0a2735;
+  text-align: center;
+}
+
+.explore {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.explore .btn-lg
+ {
+  border-radius: 30px;
+  padding: 15px 25px;
+  font-size: 22px;
+  background-image: none;
+  background-color: #ff9800;
+  color: #ffffff;
+}
+
+.explore .btn-lg:hover {
+  background-color: trasparent;
+
+
+}
+.btn,
+.btn:hover {
+  border-radius: 30px;
+  background-image: none;
+  background-color: transparent;
+  border-color: #ff9800;
+  color: black;
+  margin-bottom: 20px;
+  box-shadow: none;
+  outline: none;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  color: #ffffff;
+  outline: none;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Cards
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+.cards-container{
+    width: 90%;
+    margin-top: -180px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.card{
+    background: #737d07;
+    margin: 150px 1% 1%;
+    height: 500px;
+    position:relative;
+    border-radius: 10px;
+    box-shadow: 4px 5px 50px #888888d6;
+    flex: 1;
+    flex: 0 350;
+    flex-basis: 350px;
+}
+
+.card a{
+  text-decoration: none;
+  color: black;
+}
+
+.card-image1, .card-image2, .card-image3{
+  top: 0;
+  position: absolute;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  border-radius: 10px;
+}
+.card-image1{
+  background: url('../img/vegan-burger.jpg');
+  background-position: 40% 90%;
+  background-size: cover;
+}
+.card-image2{
+  background: url('../img/diet.jpg');
+  background-size: cover;
+  background-position: 80% 50%;
+}
+.card-image3{
+  background: url('../img/snack-pc.jpg');
+  background-position: 40% 90%;
+  background-size: cover;
+}
+
+
+
+.text{
+    margin: 5% 3%;
+    padding-right: 20px;
+    left: 7%;
+    height: 195px;
+    top: 240px;
+    color: white;
+    position: absolute;
+}
+
+.text p{
+    margin-top: 30px;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: left;
+}
+
+.text h2{
+  font-weight: 700;
+  color: white;
+}
+
+.read-more{
+  position: absolute;
+  bottom: -30px;
+  right: 20px;
+  font-size: 20px;
+}
+
+/* Media Queries for Cards */
+
+
+@media (max-width:1220px) and (min-width:978px) {
+  .text p{
+    font-size: 14px;
+  }
+
+  .text h2{
+    font-weight: 700;
+    font-size: 25px
+  }
+}
+
+@media (max-width:978px) and (min-width:1px) {
+  .cards-container{
+      width: 90%;
+      display: block;
+  }
+    .cards-container p{
+      display: none;
+    }
+
+  .card{
+    height: 350px;
+  }
+  .text{
+      left: 0;
+  }
+  .read-more{
+display: none;
+  }
+
+  .card-image1{
+    background: url('../img/vegan-burger.jpg');
+    background-position:50%;
+    background-size: cover;
+  }
+  .card-image2{
+    background: url('../img/diet.jpg');
+    background-size: cover;
+    background-position-Y: 70%;
+  }
+  .card-image3{
+    background: url('../img/snack-pc.jpg');
+    background-position: 50%;
+    background-size: cover;
+  }
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Product Lineup
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.product-lineup-container{
+    background: #ffffff;
+}
+
+/* .product-support-container{
+    height: 400px;
+    background: #555;
+} */
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Subsctiption
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.subscribe {
+  background: #F8A434;
+  height: 500px;
+  font-family: 'Lato', sans-serif;
+  color: #FDFCFB;
+  text-align: center;
+}
+
+
+.subscribe form {
+  width: 450px;
+  margin: 17% auto;
+}
+
+
+.subscribe-header > h2{
+  padding-top: 120px;
+  padding-bottom: 50px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+
+.subscribe-description {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.3em;
+  margin: -2px 0 45px;
+}
+
+
+.input {
+  display: flex;
+  align-items: center;
+}
+
+
+.button {
+  height: 44px;
+  border: none;
+}
+
+
+#email {
+  width: 75%;
+  background: #FDFCFB;
+  font-family: inherit;
+  color: #737373;
+  letter-spacing: 1px;
+  text-indent: 5%;
+  border-radius: 5px 0 0 5px;
+}
+
+
+#submit {
+  width: 25%;
+  height: 46px;
+  background: #E86C8D;
+  font-family: inherit;
+  font-weight: bold;
+  color: inherit;
+  letter-spacing: 1px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+
+#submit:hover {
+  background: #d45d7d;
+}
+
+
+.subscribe > form > input:focus {
+  outline: none;
+  outline: 2px solid #E86C8D;
+  box-shadow: 0 0 2px #E86C8D;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Footer
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+footer{
+
+  height: 500px;
+  background: #555;
+}
+
+.footer-container{
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px;
+  color: white;
+}
+
+.footer-container h4{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.footer-container li{
+  list-style: none;
+  text-transform: capitalize;
+}
+
+.footer-container a{
+  text-decoration: none;
+  color: white;
+}
+
+.footer-container i{
+  transform: scale(1.5);
+  margin: 7px;
+}
+
+.footer-container a:hover{
+  color: orange;
+}
+
+.footer-col1{
+float: left;
+padding-left: 0px;
+}
+
+.footer-col2{
+float: left;
+padding-left: 20px;
+}
+
+.footer-col3{
+float: left;
+padding-left: 20px;
+}
+
+.social-media{
+  float: right;
+}
+
+.legal{
+  display: block;
+  color: white;
+  text-align: center;
+  margin-top: 160px;
+}
+
+@media (max-width:978px) and (min-width:1px) {
+
+  .social-media{
+    float: none;
+    padding-left: 40%;
+
+  }
+
+  .footer-col1{
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  .footer-col2, .footer-col3 {
+    display: none;
+  }
+}
